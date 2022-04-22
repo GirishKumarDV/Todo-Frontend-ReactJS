@@ -60,8 +60,8 @@ function App() {
         maxLength = "100"
         required ref = { todoContentRef }
         /> <
-        button className = "btn" > ADD < /button> <
-        /form> {
+        button className = "btn" > ADD < /button> < /
+        form > {
             isLoading ? ( <
                 p > Loading... < /p>
             ) : (
