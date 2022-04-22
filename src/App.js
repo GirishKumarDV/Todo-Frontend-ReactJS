@@ -2,7 +2,7 @@ import React from "react";
 import Todo from "./components/Todo";
 import { useRef, useState, useEffect } from "react";
 
-export const url = "https://betsol057.herokuapp.com/";
+export const url = "https://todo-frontend-girish057a.herokuapp.com/";
 
 function App() {
     const [todoList, setTodoList] = useState([]);
@@ -66,8 +66,8 @@ function App() {
                 p > Loading... < /p>
             ) : (
                 todoList.map((item) => {
-                    return <Todo key = { item.id }
-                    id = { item.id }
+                    return <Todo key = { item.tid }
+                    tid = { item.tid }
                     title = { item.title }
                     completed = { item.completed }
                     getItems = { getItems }
